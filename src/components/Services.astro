@@ -1,0 +1,84 @@
+
+---
+import { Image } from "astro:assets";
+
+import supportImage from "../assets/images/service-support.jpg";
+import digitalImage from "../assets/images/service-digital.jpg";
+import infrastructureImage from "../assets/images/service-infrastructure.jpg";
+---
+
+<section class="services" id="servicios">
+	<div class="services-heading">
+		<span class="section-tag">LO QUE HACEMOS</span>
+		<h2>Soluciones para cada desafío tecnológico</h2>
+		<p>
+			Acompañamos a las PYMES en su transformación digital
+			con servicios tecnológicos adaptados a sus necesidades.
+		</p>
+	</div>
+
+	<div class="services-grid">
+		<!-- Servicio 1 -->
+		<article class="service-card">
+			<div class="service-number">01 / SOPORTE</div>
+
+			<div class="service-image">
+				<Image
+					src={supportImage}
+					alt="Técnico realizando labores de soporte informático"
+					format="webp"
+				/>
+			</div>
+
+			<div class="service-info">
+				<h3>Soporte técnico</h3>
+				<p>
+					Mantenimiento preventivo, diagnóstico y asistencia
+					técnica para mantener tus equipos funcionando.
+				</p>
+			</div>
+		</article>
+
+		<!-- Servicio 2 -->
+		<article class="service-card">
+			<div class="service-number">02 / DIGITALIZACIÓN</div>
+
+			<div class="service-image">
+				<Image
+					src={digitalImage}
+					alt="Herramientas digitales para la gestión empresarial"
+					format="webp"
+				/>
+			</div>
+
+			<div class="service-info">
+				<h3>Soluciones digitales</h3>
+				<p>
+					Desarrollo e implementación de herramientas digitales
+					para optimizar procesos y mejorar la gestión.
+				</p>
+			</div>
+		</article>
+
+		<!-- Servicio 3 -->
+		<article class="service-card">
+			<div class="service-number">03 / INFRAESTRUCTURA</div>
+
+			<div class="service-image">
+				<Image
+					src={infrastructureImage}
+					alt="Infraestructura tecnológica y servidores empresariales"
+					format="webp"
+				/>
+			</div>
+
+			<div class="service-info">
+				<h3>Infraestructura TI</h3>
+				<p>
+					Configuración de redes, administración de servidores
+					y orientación en seguridad informática.
+				</p>
+			</div>
+		</article>
+	</div>
+</section>

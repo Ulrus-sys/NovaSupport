@@ -1,16 +1,57 @@
+
 ---
+import MainLayout from "../layouts/MainLayout.astro";
+
+import About from "../components/About.astro";
+import Services from "../components/Services.astro";
+import Projects from "../components/Projects.astro";
+import Video from "../components/Video.astro";
+import Contact from "../components/Contact.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout
+  title="NovaSupport | Soluciones Tecnológicas"
+  description="NovaSupport: soluciones tecnológicas y soporte informático para empresas."
+>
+  <!-- Presentación principal -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <span class="hero-tag">TECNOLOGÍA Y SOPORTE INFORMÁTICO</span>
+
+      <h1>
+        Impulsamos tu empresa con
+        <span>soluciones tecnológicas</span>
+      </h1>
+
+      <p>
+        En NovaSupport ayudamos a las empresas a optimizar sus
+        procesos mediante soporte informático, innovación y
+        soluciones digitales.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#servicios" class="button-primary">
+          Conoce nuestros servicios
+        </a>
+
+        <a href="/nosotros" class="button-secondary">
+          Conócenos
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-decoration">
+      <div class="decoration-circle">
+        <span>NS</span>
+      </div>
+      <p>Innovación · Tecnología · Soluciones</p>
+    </div>
+  </section>
+
+  <!-- Componentes de la página principal -->
+  <About />
+  <Services />
+  <Projects />
+  <Video />
+  <Contact />
+</MainLayout>

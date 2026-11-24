@@ -1,0 +1,87 @@
+
+---
+import { Image } from "astro:assets";
+
+import managementImage from "../assets/images/project-management.jpg";
+import infrastructureImage from "../assets/images/project-infrastructure.jpg";
+import automationImage from "../assets/images/project-automation.jpg";
+---
+
+<section class="projects" id="proyectos">
+	<div class="projects-heading">
+		<span class="section-tag">NUESTRO TRABAJO</span>
+		<h2>Proyectos que generan soluciones</h2>
+		<p>
+			Conoce algunos ejemplos de cómo aplicamos la tecnología
+			para resolver desafíos empresariales.
+		</p>
+	</div>
+
+	<div class="projects-grid">
+		<!-- Proyecto 1 -->
+		<article class="project-card">
+			<div class="project-image">
+				<Image
+					src={managementImage}
+					alt="Panel de control para gestión y análisis empresarial"
+					format="webp"
+				/>
+				<span class="project-category">GESTIÓN DIGITAL</span>
+			</div>
+
+			<div class="project-info">
+				<h3>Sistema de gestión empresarial</h3>
+				<p>
+					Implementación de una plataforma digital para
+					centralizar información y facilitar el control
+					de procesos administrativos.
+				</p>
+				<span class="project-type">Proyecto de digitalización</span>
+			</div>
+		</article>
+
+		<!-- Proyecto 2 -->
+		<article class="project-card">
+			<div class="project-image">
+				<Image
+					src={infrastructureImage}
+					alt="Infraestructura de servidores y redes informáticas"
+					format="webp"
+				/>
+				<span class="project-category">INFRAESTRUCTURA TI</span>
+			</div>
+
+			<div class="project-info">
+				<h3>Modernización de infraestructura</h3>
+				<p>
+					Optimización de redes y recursos tecnológicos
+					para mejorar la conectividad y continuidad
+					operacional de una empresa.
+				</p>
+				<span class="project-type">Proyecto de infraestructura</span>
+			</div>
+		</article>
+
+		<!-- Proyecto 3 -->
+		<article class="project-card">
+			<div class="project-image">
+				<Image
+					src={automationImage}
+					alt="Dashboard de indicadores y reportes empresariales"
+					format="webp"
+				/>
+				<span class="project-category">ANÁLISIS DE DATOS</span>
+			</div>
+
+			<div class="project-info">
+				<h3>Automatización de reportes</h3>
+				<p>
+					Desarrollo de herramientas para automatizar
+					reportes y facilitar la toma de decisiones
+					mediante información organizada.
+				</p>
+				<span class="project-type">Proyecto de automatización</span>
+			</div>
+		</article>
+	</div>
+</section>
