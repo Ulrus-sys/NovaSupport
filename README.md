@@ -4,8 +4,7 @@
 
 El sitio busca transmitir una imagen moderna y profesional, destacando cómo la tecnología puede contribuir a optimizar procesos, mejorar la productividad y fortalecer el crecimiento empresarial.
 
-## 🌐 Sitio web
-
+🌐 Sitio web publicado: https://novasupport-9jv.pages.dev/
 Repositorio: [NovaSupport en GitHub](https://github.com/Ulrus-sys/NovaSupport)
 
 ## 📌 Secciones del sitio
